@@ -3,6 +3,7 @@
   <head>
     <title>Free Steam Key Giveaway</title>
     <style>
+      /* Load your COD font */
       @font-face {
         font-family: 'CallofDuty';
         src: url("Call of Ops Duty II.otf");
@@ -14,7 +15,7 @@
         height: 100%;
         background: url("OIP.png") no-repeat center center fixed;
         background-size: cover;
-        font-family: 'CallofDuty', Arial, sans-serif;
+        font-family: 'CallofDuty', sans-serif; /* Force COD font everywhere */
         text-align: center;
         color: white;
       }
@@ -42,12 +43,22 @@
         border: 3px solid #66c0f4;
         border-radius: 6px;
         transition: 0.2s;
-        font-family: 'CallofDuty';
+        font-family: 'CallofDuty'; /* Force COD font */
       }
 
+      /* Hover keeps COD font */
       .button:hover {
         background: #66c0f4;
         color: #1b2838;
+        font-family: 'CallofDuty'; /* Force COD font */
+      }
+
+      /* Pressed button ALSO COD font */
+      .button:active {
+        transform: scale(0.95);
+        background: #0f1620;
+        color: #66c0f4;
+        font-family: 'CallofDuty'; /* Force COD font */
       }
     </style>
 
